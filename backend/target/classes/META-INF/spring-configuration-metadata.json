@@ -1,0 +1,44 @@
+{
+  "groups": [
+    {
+      "name": "app",
+      "type": "com.stockanalysis.config.AppProperties",
+      "sourceType": "com.stockanalysis.config.AppProperties"
+    },
+    {
+      "name": "app.llm",
+      "type": "com.stockanalysis.config.AppProperties$Llm",
+      "sourceType": "com.stockanalysis.config.AppProperties",
+      "sourceMethod": "public com.stockanalysis.config.AppProperties.Llm getLlm() "
+    },
+    {
+      "name": "app.watchlist",
+      "type": "com.stockanalysis.config.AppProperties$Watchlist",
+      "sourceType": "com.stockanalysis.config.AppProperties",
+      "sourceMethod": "public com.stockanalysis.config.AppProperties.Watchlist getWatchlist() "
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.llm.api-key",
+      "type": "java.lang.String",
+      "sourceType": "com.stockanalysis.config.AppProperties$Llm"
+    },
+    {
+      "name": "app.llm.base-url",
+      "type": "java.lang.String",
+      "sourceType": "com.stockanalysis.config.AppProperties$Llm"
+    },
+    {
+      "name": "app.llm.model",
+      "type": "java.lang.String",
+      "sourceType": "com.stockanalysis.config.AppProperties$Llm"
+    },
+    {
+      "name": "app.watchlist.symbols",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.stockanalysis.config.AppProperties$Watchlist"
+    }
+  ],
+  "hints": []
+}

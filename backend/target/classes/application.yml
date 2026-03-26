@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+app:
+  llm:
+    model: ${LLM_MODEL:gpt-4.1-mini}
+    api-key: ${OPENAI_API_KEY:}
+    base-url: ${OPENAI_BASE_URL:https://api.openai.com}
+  watchlist:
+    symbols:
+      - AAPL
+      - MSFT
+  scheduler:
+    enabled: true
+    days: 120
+    cron: "0 0 18 * * *"
+
+logging:
+  level:
+    root: INFO
+
